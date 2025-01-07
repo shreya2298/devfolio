@@ -28,7 +28,7 @@ export function Sparkle({
 
   return (
     <Component
-      className="relative bg-transparent text-xl p-[1px] overflow-hidden "
+      className="relative bg-transparent text-xl p-[1px] overflow-hidden rounded-3xl"
       {...otherProps}
     >
       <div
@@ -36,7 +36,7 @@ export function Sparkle({
       >
         <SparkleBox duration={duration} rx="30%" ry="30%">
           <div
-            className="h-20 w-20 opacity-80 bg-[radial-gradient(purple_70%,transparent_80%)]"
+            className="h-20 w-20 opacity-80 bg-[radial-gradient(purple_70%,transparent_80%)] "
           />
         </SparkleBox>
       </div>
