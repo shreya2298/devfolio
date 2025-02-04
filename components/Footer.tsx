@@ -10,7 +10,7 @@ const Footer = () => {
           className="w-full h-full opacity-20"
         />
       </div>
-      <div className="flex flex-col mt-16 justify-between items-center z-10">
+      <div className="relative flex flex-col mt-16 justify-between items-center z-10">
         <Socials />
         <div className="text-center my-10">
           <p className="mx-auto pt-5 sm:text-3xl">
