@@ -27,13 +27,12 @@ export const myTechStack = [
   "Kibana",
   "MySQL,PostgreSQL",
   "MongoDB",
-  "REST API",
-  "Javascript"
+  "REST API"
 ]
 
 export const projects = [
   {
-  
+
     id: 1,
     title: "CI/CD Automation with Jenkins & Docker",
     description: "Developed and implemented a robust CI/CD pipeline using Jenkins, Docker, and Git. Automated build, tagging, and deployment of containerized applications with Git commit hash-based versioning for seamless and consistent releases.",
@@ -42,8 +41,8 @@ export const projects = [
     img: "", // Removed as requested
     github: "https://github.com/shreya2298/on_push_docker_jenkins_pipeline",
     link: "https://www.linkedin.com/in/smfdeveloper",
-    techs: ["Jenkins", "Docker", "Git", "Groovy", "CI/CD", "Credential Management"]  
-    
+    techs: ["Jenkins", "Docker", "Git", "Groovy", "CI/CD", "Credential Management"]
+
   },
   {
     id: 2,
@@ -78,7 +77,7 @@ export const projects = [
     link: "https://www.linkedin.com/in/smfdeveloper",
     techs: ["Jenkins", "Docker", "Terraform", "AWS (EC2, S3, VPC)", "Ansible", "Git"]
   },
-  { 
+  {
     id: 5,
     title: "Flask App Deployment on Kubernetes Cluster",
     description: "Deployed a Flask web application on a Kubernetes cluster using Docker. Containerized the app, created Kubernetes manifests for deployment and service exposure, and ensured scalability and high availability.",
@@ -87,7 +86,7 @@ export const projects = [
     img: "", // No image as requested
     github: "https://github.com/shreya2298/flask-app_doc-k8s.git",
     link: "https://www.linkedin.com/in/smfdeveloper",
-    techs: ["Flask", "Docker", "Kubernetes", "YAML", "Microservices", "Cloud-Native"]  
+    techs: ["Flask", "Docker", "Kubernetes", "YAML", "Microservices", "Cloud-Native"]
   },
   {
     id: 6,
@@ -100,61 +99,27 @@ export const projects = [
     link: "https://www.linkedin.com/in/smfdeveloper",
     techs: ["GitHub Actions", "CI", "YAML", "Automation", "DevOps"]
   }
-  
+
 ];
 
 export const workExperience = [
   {
     id: 1,
-    company: "LumoTech",
-    title: "UX/UI Sorcerer",
-    desc: "Transformed the user dashboard with a sleek design that boosted engagement by 35%. Optimized the onboarding flow to make new users feel like wizards on their first try.",
+    company: "TCS",
+    title: "Backend Developer",
+    desc: "Engineered custom reports by collecting and organizing data from a license-based DMS application. Instead of traditional database connections, utilized a session manager to interface with the application and fetch requested fields using well-structured getter and setter methods from the application, ensuring data integrity and application compliance.",
     className: "md:col-span-2",
-    location: "Los Angeles",
-    period: "2022 - Present",
+    location: "Pune, Maharashtra, India", // You can update this with your actual location
+    period: "2021 - 2025", // Update the timeline if needed
     skills: [
-      "Figma",
-      "Sketch",
-      "Prototyping",
-      "User Testing",
-      "Illustrator",
-      "Adobe XD"
+      "Java",
+      "JSP",
+      "Servlets",
+      "Session Management",
+      "Data Handling",
+      "Excel Reporting"
     ]
   },
-  {
-    id: 2,
-    company: "PixelMinds",
-    title: "Product Design Genius",
-    desc: "Revamped the interface with intuitive controls, increasing user retention by 28%. Pioneered AR features for interactive learning experiences—because education should be fun and engaging.",
-    className: "md:col-span-2",
-    location: "San Francisco",
-    period: "2020 - 2022",
-    skills: [
-      "Figma",
-      "User Research",
-      "Wireframing",
-      "Prototyping",
-      "Usability Testing",
-      "CSS"
-    ]
-  },
-  {
-    id: 3,
-    company: "DesignHub",
-    title: "Design Systems Guru",
-    desc: "Crafted design systems that were so organized they could be put in a museum. Pushed for consistent, user-friendly components that made developers’ lives easier.",
-    className: "md:col-span-2",
-    location: "Remote",
-    period: "2016 - 2020",
-    skills: [
-      "Figma",
-      "React",
-      "Design Tokens",
-      "Accessibility",
-      "Storybook",
-      "Collaboration"
-    ]
-  }
 ];
 
 

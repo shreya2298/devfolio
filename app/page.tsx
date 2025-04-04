@@ -11,9 +11,9 @@ import NavBar from "@/components/ui/NavBar";
 
 const Home = () => {
   return (
-    <main className="h-screen bg-[#120012] flex">
+    <main className="min-h-screen bg-[#120012] flex flex-col">
       <NavBar />
-      <div className="w-full overflow-y-auto mx-auto overflow-hidden">
+      <div className="flex-1 overflow-y-auto">
         <div className="px-5 sm:px-40">
           <FloatingBar />
           <Hero />
@@ -25,7 +25,6 @@ const Home = () => {
         <Footer />
       </div>
     </main>
-
   );
 };
 

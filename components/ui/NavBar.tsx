@@ -9,18 +9,27 @@ const NavBar = (): JSX.Element => {
   const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const id = entry.target.getAttribute("id");
-          if (id) setActiveSection(id);
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      let currentSection = "";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const scrollPosition = window.scrollY + 100; // Adding some offset
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          currentSection = section.id;
         }
       });
-    });
 
-    document.querySelectorAll("section").forEach((section) => observer.observe(section));
+      setActiveSection(currentSection);
+    };
 
-    return () => observer.disconnect();
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -29,33 +38,41 @@ const NavBar = (): JSX.Element => {
         backgroundColor: "rgba(255, 255, 255, 0.1)",
         backdropFilter: "blur(10px)",
       }}
-      className="sticky top-0 left-0 h-screen shadow-lg backdrop-blur-3xl border-r-2 border-white/10 w-10 sm:w-16 flex flex-col z-50 justify-evenly"
+      className="sticky top-0 w-full h-16 shadow-lg backdrop-blur-3xl border-b-2 border-white/10 flex items-center justify-center z-50"
     >
-      {navItems.map(({ name, link }, index) => {
-        const isActive = `#${activeSection}` === link;
+      <div className="flex items-center gap-8">
+        {navItems.map(({ name, link }, index) => {
+          const isActive = activeSection === link.replace("#", "");
 
-        return (
-          <Link
-            key={`nav-item-${index}`}
-            href={link}
-            className={cn(
-              "flex items-center justify-center transform rotate-90 transition-all duration-100 ease-in-out",
-              isActive && "scale-110"
-            )}
-          >
-            <span
+          return (
+            <Link
+              key={`nav-item-${index}`}
+              href={link}
               className={cn(
-                "text-sm font-extrabold cursor-pointer",
-                isActive
-                  ? "bg-slate-900/[0.8] h-full text-white font-extrabold border-t border-white p-2 sm:p-5 items-center flex"
-                  : "opacity-50 hover:opacity-100"
+                "relative transition-all duration-300 ease-in-out group",
+                isActive && "scale-110"
               )}
             >
-              {name}
-            </span>
-          </Link>
-        );
-      })}
+              <span
+                className={cn(
+                  "text-sm font-extrabold cursor-pointer relative",
+                  isActive
+                    ? "text-white"
+                    : "text-white/50 hover:text-white"
+                )}
+              >
+                {name}
+                <span
+                  className={cn(
+                    "absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple to-red-700 transition-all duration-300",
+                    isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                  )}
+                />
+              </span>
+            </Link>
+          );
+        })}
+      </div>
     </div>
   );
 };
