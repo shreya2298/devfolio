@@ -6,94 +6,101 @@ export const navItems = [
 ];
 
 export const myTechStack = [
-  "JavaScript (ES6+)",
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Jest",
-  "Cypress",
-  "Storybook",
-  "Performance Testing",
-  "HTML",
-  "CSS",
-  "SCSS",
-  "Tailwind",
-  "ShadCn/UI",
-  "Figma",
-  "Framer",
-  "Git",
-  "TanStack Query",
+  "AWS",
+  "Linux",
+  "Python",
+  "Java",
+  "Flask",
+  "FastAPI",
+  "Docker",
+  "Terraform",
+  "Kubernetes",
+  "ArgoCD",
+  "GitHub",
+  "Ansible",
+  "Github Actions",
+  "Jenkins",
   "CI/CD",
-  "Jira",
-  "Agile"
+  "Prometheus",
+  "Grafana",
+  "Elasticsearch",
+  "Kibana",
+  "MySQL,PostgreSQL",
+  "MongoDB",
+  "REST API",
+  "Javascript"
 ]
 
 export const projects = [
   {
+  
     id: 1,
-    title: "FitLife: Your Gym Buddy in Code",
-    description: "What if your fitness app could help you design websites while tracking your push-ups? This is it. Built with love, sweat, and a bit of JavaScript magic!",
+    title: "CI/CD Automation with Jenkins & Docker",
+    description: "Developed and implemented a robust CI/CD pipeline using Jenkins, Docker, and Git. Automated build, tagging, and deployment of containerized applications with Git commit hash-based versioning for seamless and consistent releases.",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     titleClassName: "justify-end",
-    img: "https://i.pinimg.com/originals/be/f4/1a/bef41a7d5a877841bbf7d8f9f0d42f14.gif",
-    github: "https://github.com/atzin-escandia",
-    link: "https://www.instagram.com/atzinescandia",
-    techs: ["JavaScript", "React", "NodeJS", "Express", "MongoDB", "Tailwind"]
+    img: "", // Removed as requested
+    github: "https://github.com/shreya2298/on_push_docker_jenkins_pipeline",
+    link: "https://www.linkedin.com/in/smfdeveloper",
+    techs: ["Jenkins", "Docker", "Git", "Groovy", "CI/CD", "Credential Management"]  
+    
   },
   {
     id: 2,
-    title: "Timezone Buddy: Never Miss a Workout",
-    description: "You can’t train for a marathon if you're confused about timezones! Sync with your squad no matter where they are and never miss a coding session or a yoga flow.",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    titleClassName: "justify-start",
-    img: "https://i.pinimg.com/originals/84/f6/d1/84f6d14f1f88d34d3956150d19060d3a.gif",
-    github: "https://github.com/atzin-escandia",
-    link: "https://www.threads.net/@atzinescandia",
-    techs: ["JavaScript", "React", "NodeJS", "AWS", "GitHub", "Jira"]
+    title: "Server Monitoring with Prometheus & Grafana",
+    description: "Implemented a comprehensive server monitoring solution using Prometheus, Node Exporter, and Grafana. Enabled real-time visibility into system performance and resource utilization across multiple servers, improving proactive issue detection.",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    titleClassName: "justify-end",
+    img: "", // No image as requested
+    github: "https://github.com/shreya2298/monitoring-metrics.git",
+    link: "https://www.linkedin.com/in/smfdeveloper",
+    techs: ["Prometheus", "Node Exporter", "Grafana", "Linux", "Monitoring", "Dashboards"]
   },
   {
     id: 3,
-    title: "Code & Paint: A Creative Playground",
-    description: "What if coding met art? This interactive web builder lets you design while you create. Whether you’re coding a landing page or painting a masterpiece, this is where your creativity comes to life.",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    titleClassName: "justify-center",
-    img: "https://i.pinimg.com/originals/54/b5/24/54b52468335fd6eb935e330eb3197b25.gif",
-    github: "https://github.com/atzin-escandia",
-    link: "https://theplumup.com",
-    techs: ["TypeScript", "React", "NextJS", "CSS", "AWS", "GitHub"]
+    title: "Centralized Logging with ELK Stack",
+    description: "Implemented centralized logging using the ELK Stack (Elasticsearch, Logstash, Kibana) along with Filebeat and Docker. Aggregated and visualized logs from multiple servers, improving log analysis efficiency by 60%.",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    titleClassName: "justify-end",
+    img: "", // No image as requested
+    github: "https://github.com/shreya2298/monitoring-metrics.git",
+    link: "https://www.linkedin.com/in/smfdeveloper",
+    techs: ["Elasticsearch", "Logstash", "Kibana", "Filebeat", "Docker", "AWS", "Log Analysis"]
   },
   {
     id: 4,
-    title: "JavaScript Quest: Level Up Your Code",
-    description: "Time to put your JavaScript skills to the test in an RPG-style adventure. Solve puzzles, defeat bugs, and unlock pro tips as you level up to coding mastery.",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    titleClassName: "justify-start",
-    img: "https://i.pinimg.com/736x/c7/de/01/c7de016c811fa5fae9d7120402f27645.jpg",
-    github: "https://github.com/atzin-escandia",
-    link: "https://theplumup.com",
-    techs: ["JavaScript", "NodeJS", "Express", "React", "Heroku", "GitHub"]
+    title: "CI/CD Pipeline with Jenkins & Terraform",
+    description: "Developed and deployed a CI/CD pipeline on AWS using Jenkins, Docker, and Terraform. Automated infrastructure provisioning, application deployment, and artifact storage—resulting in a 50% reduction in deployment time.",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    titleClassName: "justify-end",
+    img: "", // No image as requested
+    github: "https://github.com/shreya2298/pipeline_jenkins_docker.git",
+    link: "https://www.linkedin.com/in/smfdeveloper",
+    techs: ["Jenkins", "Docker", "Terraform", "AWS (EC2, S3, VPC)", "Ansible", "Git"]
   },
-  {
+  { 
     id: 5,
-    title: "JS Animation Magic: Making Transitions Dance",
-    description: "No more boring fades or slides. Animate your website with smooth, interactive animations that will have users tapping their feet. It's magic, but with code!",
-    className: "md:col-span-3 md:row-span-2",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "https://i.pinimg.com/736x/09/2e/25/092e252b5562c7e5eb576215c6d9db8d.jpg",
-    github: "https://github.com/atzin-escandia",
-    link: "https://theplumup.com/about",
-    techs: ["JavaScript", "CSS", "React", "Tailwind", "GitHub", "AWS"]
+    title: "Flask App Deployment on Kubernetes Cluster",
+    description: "Deployed a Flask web application on a Kubernetes cluster using Docker. Containerized the app, created Kubernetes manifests for deployment and service exposure, and ensured scalability and high availability.",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    titleClassName: "justify-end",
+    img: "", // No image as requested
+    github: "https://github.com/shreya2298/flask-app_doc-k8s.git",
+    link: "https://www.linkedin.com/in/smfdeveloper",
+    techs: ["Flask", "Docker", "Kubernetes", "YAML", "Microservices", "Cloud-Native"]  
   },
   {
     id: 6,
-    title: "Space Explorer App: Code Your Way Through the Cosmos",
-    description: "Ever wanted to explore space? Now you can—without leaving your desk. Navigate through galaxies, discover planets, and learn about the universe, all while building your dream website.",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    img: "https://i.pinimg.com/originals/bf/c3/fb/bfc3fb764ff5f4d8d9ecb6da8544709c.gif",
-    github: "https://github.com/atzin-escandia",
-    link: "https://atzinescandia.com/contact",
-    techs: ["JavaScript", "React", "NodeJS", "CSS", "NextJS", "GitHub"]
+    title: "Simple CI Pipeline with GitHub Actions",
+    description: "Created a lightweight CI pipeline using GitHub Actions to automate build and test processes on code push and pull requests. Streamlined workflow efficiency and ensured code quality through automated validation.",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    titleClassName: "justify-end",
+    img: "", // No image as requested
+    github: "https://github.com/shreya2298/github-act-commands.git",
+    link: "https://www.linkedin.com/in/smfdeveloper",
+    techs: ["GitHub Actions", "CI", "YAML", "Automation", "DevOps"]
   }
+  
 ];
 
 export const workExperience = [

@@ -19,15 +19,14 @@ const About = () => (
         className="flex-col text-left p-3 md:p-5 lg:p-10 gap-5 min-h-full"
       >
         <p>
-          &quot;Hey! I&apos;m Atzin — web designer, developer, fitness lover somehow and accidental content creator.
+          &quot;Hey! I&apos;m Shreya — Backend Developer with DevOps Enthusiast.
         </p>
         <p>
-          My background in design and development gives me the tools to bring ideas to life, but my heart is in
-          connecting with people. I love sharing my journey and what I&apos;ve learned along the way.
+        I'm a Backend Engineer with 4 years of IT experience, passionate about building scalable systems and exploring the world of DevOps. I thrive on solving complex problems, continuously learning, and sharing my journey with others as I grow in this ever-evolving tech landscape.
         </p>
         <p>
-          Got something in mind or just want to chat? Whether it&apos;s a new project or a fitness tip, I&apos;d love to
-          connect, don&apos;t be shy!
+        Got something in mind or just want to chat? Whether it&apos;s about backend systems, DevOps practices, or just exchanging ideas, I&apos;d love to connect — don&apos;t hesitate to reach out!
+
         </p>
       </Sparkle>
 

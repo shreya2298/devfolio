@@ -21,15 +21,16 @@ const Hero = () => {
           <h1 className="text-center text-4xl md:text-6xl lg:text-8xl font-extrabold">
             Hey, I&apos;m {''}
             <span className="bg-gradient-to-r from-purple to-red-700 bg-clip-text text-transparent">
-              Atzin Escandia!
+              Shreya Fegade!
             </span>
           </h1>
         </Reveal>
         <h2 className="title my-6 text-xl md:text-3xl lg:text-5xl">
-          I&apos;m a Software Developer
+          I&apos;m a Devops Engineer
         </h2>
         <p className="max-w-[700px] mx-auto">
-          A designer, developer and fitness enthusiast who spends way too much time creating websites that look cool. If you&apos;re into tech, fitness, or just want to chat DM me - let&apos;s make your brand everyone&apos;s crush! 🍓
+        A backend engineer and DevOps enthusiast who loves building reliable systems and learning new tech every day. If you&apos;re into backend magic, cloud stuff and to automate Integrations and Deployments, or just want to chat, DM me — let&apos;s build something awesome together! 🚀
+
         </p>
         <a className="mt-10 mx-auto" href="#contact">
           <Button
