@@ -12,18 +12,17 @@ const Contact = () => {
           </h2>
         </Reveal>
         <p className="max-w-[700px] mt-10">
-          {"Want more purple neon?"}
+          {"Let's collaborate on your next project!"}
         </p>
-        <p className="max-w-[700px] mt-10">
-          Download my <a
+        <p className="max-w-[700px] mt-4">
+          Check out my <a
             className="text-purple font-extrabold hover:scale-105 inline-block transition-transform duration-200"
             target="_blank"
-            href="https://vscodethemes.com/e/atzinescandia.theplumup/theplumup/open?with=vscode"
+            href="https://github.com/shreya2298"
           >
-            VSCode theme
-          </a> for free!
+            GitHub
+          </a> repository
         </p>
-
         <a className="mt-10" href="mailto:hello@theplumup.com">
           <Button
             title="Let's connect"

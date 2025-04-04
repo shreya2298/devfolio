@@ -46,7 +46,7 @@ const Certifications = () => {
                 </p>
                 <p className="my-5 text-white/80">Validated expertise in designing distributed systems on AWS, implementing security controls, and optimizing cloud solutions for performance and cost.</p>
                 <div className="flex flex-wrap gap-2 mt-5">
-                  {['AWS', 'Cloud Architecture', 'Security', 'Scalability', 'Cost Optimization'].map((skill) => (
+                  {['AWS', 'AWS Lambda', 'Security', 'Scalability', 'Cost Optimization', 'Elastic Beanstalk', 'ECS','VPC','CloudWatch','S3','Route 53'].map((skill) => (
                     <div
                       key={skill}
                       className="bg-white/10 text-sm font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-white/20 transition duration-200 ease-in-out"

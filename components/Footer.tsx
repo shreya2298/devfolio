@@ -17,7 +17,7 @@ const Footer = () => {
             ✷ Link to the  <a
               className="text-purple font-extrabold hover:scale-105 inline-block transition-transform duration-200"
               target="_blank"
-              href="https://github.com/atzin-escandia/devfolio"
+              href="https://github.com/shreya2298/devfolio"
             >
               github
             </a> repository ✷
@@ -30,7 +30,7 @@ const Footer = () => {
             target="_blank"
             href="https://theplumup.com"
           >
-            Atzin Escandia.
+            Shreya Fegade.
           </a>
         </p>
       </div>

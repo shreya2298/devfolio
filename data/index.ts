@@ -108,17 +108,21 @@ export const workExperience = [
     id: 1,
     company: "TCS",
     title: "Backend Developer",
-    desc: "Engineered custom reports by collecting and organizing data from a license-based DMS application. Instead of traditional database connections, utilized a session manager to interface with the application and fetch requested fields using well-structured getter and setter methods from the application, ensuring data integrity and application compliance.",
+    desc: "Experienced Backend Developer with 4 years in designing and implementing scalable server-side solutions. Developed custom reports by collecting and organizing data from a licensed DMS application, leveraging session management over traditional DB connections to securely fetch application data via encapsulated getter and setter methods. Successfully delivered multiple projects focused on building RESTful web services that integrated with third-party tools and external systems using SFTP protocols. Proficient in crafting robust APIs, managing secure data transactions, and ensuring high availability through optimized server logic and modular architecture.",
     className: "md:col-span-2",
-    location: "Pune, Maharashtra, India", // You can update this with your actual location
-    period: "2021 - 2025", // Update the timeline if needed
+    location: "Pune, Maharashtra, India", // Feel free to update based on your actual location
+    period: "2021 - 2025", // Adjust timeline if needed
     skills: [
       "Java",
       "JSP",
       "Servlets",
+      "REST APIs",
       "Session Management",
-      "Data Handling",
-      "Excel Reporting"
+      "SFTP Integration",
+      "Web Services",
+      "Third-party Integrations",
+      "Backend Architecture",
+      "Oracle Database",
     ]
   },
 ];
@@ -128,17 +132,17 @@ export const socialMedia = [
   {
     id: 1,
     img: "assets/git.svg",
-    link: "https://github.com/atzin-escandia",
+    link: "https://github.com/shreya2298",
   },
   {
     id: 2,
     img: "assets/linkedin.svg",
-    link: "https://www.linkedin.com/in/atzin-escandia/",
+    link: "https://www.linkedin.com/in/smfdeveloper/",
   },
   {
     id: 3,
     img: "assets/link.svg",
-    link: "https://theplumup.com/",
+    link: "https://medium.com/@smfegade2298/",
   },
 ];
 
