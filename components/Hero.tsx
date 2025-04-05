@@ -1,6 +1,7 @@
 import Button from "./Button";
 import Reveal from "./ui/Reveal";
 import { Spotlight } from "./ui/Spotlight";
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -18,11 +19,8 @@ const Hero = () => {
       </div>
       <div className="text-center my-20 mx-auto max-w-[900px] justify-center flex flex-col ">
         <Reveal>
-          <h1 className="text-center text-4xl md:text-6xl lg:text-8xl font-extrabold">
-            Hey, I&apos;m {''}
-            <span className="bg-gradient-to-r from-purple to-red-700 bg-clip-text text-transparent">
-              Shreya Fegade!
-            </span>
+          <h1 className="text-center text-2xl md:text-4xl lg:text-6xl font-extrabold">
+            Hey, I&apos;m <span className="bg-gradient-to-r from-purple to-red-700 bg-clip-text text-transparent">Shreya Fegade!</span>
           </h1>
         </Reveal>
         <h2 className="title my-6 text-xl md:text-3xl lg:text-5xl">
@@ -35,7 +33,7 @@ const Hero = () => {
         <a className="mt-10 mx-auto" href="#contact">
           <Button
             title="Contact me"
-            icon={<img src="assets/send.svg" />}
+            icon={<Image src="/assets/send.svg" alt="Send icon" width={24} height={24} />}
             position="right"
           />
         </a>

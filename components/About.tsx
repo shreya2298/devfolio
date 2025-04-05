@@ -22,7 +22,7 @@ const About = () => (
           &quot;Hey! I&apos;m Shreya — Backend Developer with DevOps Enthusiast.
         </p>
         <p>
-        I'm a Backend Engineer with 4 years of IT experience, passionate about building scalable systems and exploring the world of DevOps. I thrive on solving complex problems, continuously learning, and sharing my journey with others as I grow in this ever-evolving tech landscape.
+        I&apos;m a Backend Engineer with 4 years of IT experience, passionate about building scalable systems and exploring the world of DevOps. I thrive on solving complex problems, continuously learning, and sharing my journey with others as I grow in this ever-evolving tech landscape.
         </p>
         <p>
         Got something in mind or just want to chat? Whether it&apos;s about backend systems, DevOps practices, or just exchanging ideas, I&apos;d love to connect — don&apos;t hesitate to reach out!

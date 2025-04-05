@@ -1,5 +1,6 @@
 import Button from "./Button";
 import Reveal from "./ui/Reveal";
+import Image from 'next/image';
 
 const Contact = () => {
   return (
@@ -26,7 +27,7 @@ const Contact = () => {
         <a className="mt-10" href="mailto:hello@theplumup.com">
           <Button
             title="Let's connect"
-            icon={<img src="assets/send.svg" />}
+            icon={<Image src="/assets/send.svg" alt="Send icon" width={24} height={24} />}
             position="right"
           />
         </a>

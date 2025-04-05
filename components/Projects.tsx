@@ -3,6 +3,7 @@
 import { projects } from "@/data";
 import { Sparkle } from "./ui/Sparkle";
 import Reveal from "./ui/Reveal";
+import Image from 'next/image';
 
 const Projects = () => {
   return (
@@ -33,9 +34,11 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="cursor-pointer"
                     >
-                      <img
-                        src="assets/git.svg"
+                      <Image
+                        src="/assets/git.svg"
                         alt="GitHub"
+                        width={32}
+                        height={32}
                         className="min-w-8 transform transition-all duration-300 ease-in-out hover:scale-110 hover:fill-red-600"
                       />
                     </a>
@@ -47,9 +50,11 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="cursor-pointer"
                     >
-                      <img
-                        src="assets/link.svg"
+                      <Image
+                        src="/assets/link.svg"
                         alt="External link"
+                        width={32}
+                        height={32}
                         className="min-w-8 transform transition-all duration-300 ease-in-out hover:scale-110 hover:fill-red-600"
                       />
                     </a>

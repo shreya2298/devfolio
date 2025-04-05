@@ -1,5 +1,6 @@
 import { skills } from "@/data";
 import { cn } from "@/lib/utils";
+import Image from 'next/image';
 
 interface BentoGridProps {
   className?: string;
@@ -49,10 +50,12 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
     <div className={cn(id === 6 && "flex justify-center", "h-full")}>
       {img && (
         <div className="w-full h-full absolute">
-          <img
+          <Image
             src={img}
             alt={`Image for ${title}`}
             className="object-cover object-center opacity-20 w-full h-full"
+            width={500}
+            height={500}
           />
         </div>
       )}
@@ -74,10 +77,12 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
                 rel="noopener noreferrer"
                 className="cursor-pointer"
               >
-                <img
-                  src="assets/git.svg"
+                <Image
+                  src="/assets/git.svg"
                   alt="GitHub"
                   className="min-w-8 transform transition-all duration-300 ease-in-out hover:scale-110 hover:fill-red-600 mb-2"
+                  width={32}
+                  height={32}
                 />
               </a>
             )}
@@ -89,10 +94,12 @@ export const BentoGridItem: React.FC<BentoGridItemProps> = ({
                 rel="noopener noreferrer"
                 className="cursor-pointer"
               >
-                <img
-                  src="assets/link.svg"
+                <Image
+                  src="/assets/link.svg"
                   alt="External link"
                   className="min-w-8 transform transition-all duration-300 ease-in-out hover:scale-110 hover:fill-red-600 mb-2"
+                  width={32}
+                  height={32}
                 />
               </a>
             )}
